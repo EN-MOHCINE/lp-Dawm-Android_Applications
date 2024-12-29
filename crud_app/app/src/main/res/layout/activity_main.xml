@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DFFFD6">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database Page"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD DATA"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/viewDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW DATA" />
+
+    <EditText
+        android:id="@+id/etCurrentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Name" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Name"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnUpdateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE NAME"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etDeleteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name to delete"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnDeleteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE NAME" />
+
+    <!-- RecyclerView to display data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
