@@ -81,12 +81,12 @@ public class MainActivity extends AppCompatActivity {
 
             double bmi = poids / (taille * taille);
 
-            // Update ProgressBar
+            // Calculate progress based on BMI
             int progress = (int) ((bmi / 40.0) * 100); // Assuming 40 is the max BMI
-            bmiProgressBar.setProgress(progress);
 
-            // Update center text with percentage
-            circularProgressText.setText(String.format("%d%%", progress));
+            // Update CircularProgressBar
+            CircularProgressBar circularProgressBar = findViewById(R.id.circularProgressBar);
+            circularProgressBar.setProgress(progress);
 
             // Update motivational text based on BMI range
             if (bmi < 18.5) {

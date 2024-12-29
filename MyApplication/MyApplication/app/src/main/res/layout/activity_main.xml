@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Poids : "
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Poids"
+        android:inputType="numberDecimal"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Taille : "
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taille"
+        android:inputType="numberDecimal"
+        />
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio2"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metre"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimetre"
+            />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/mega"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Mega fonction !" />
+
+    <Button
+        android:id="@+id/calcul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculer l'IMC" />
+
+    <Button
+        android:id="@+id/raz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultat:"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/imcProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:max="50"
+        android:progress="0"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Circular ProgressBar -->
+        <ProgressBar
+            android:id="@+id/imcCircularProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:indeterminate="false"
+            android:rotation="270"
+            android:max="50"
+            android:progress="0"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/circular_progress_drawable" />
+
+
+        <!-- Text in the middle -->
+        <TextView
+            android:id="@+id/imcCategoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

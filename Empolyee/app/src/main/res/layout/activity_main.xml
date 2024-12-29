@@ -1,0 +1,43 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Employee Management App"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/employeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee List"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/searchEmployeeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Employee"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/addEmployeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Employee"
+        android:layout_marginTop="16dp" />
+
+    <!-- Other UI elements can go here -->
+</LinearLayout>
